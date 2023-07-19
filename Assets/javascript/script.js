@@ -4,8 +4,8 @@
 $(function () {
 
   var currentDay = dayjs();
-  // var currentHour = currentDay.hour();
-  var currentHour = 11;
+  var currentHour = currentDay.hour();
+  var userInput = $(".description")
 
 $("#currentDay").text(currentDay.format("MMMM D, YYYY"));  
 
@@ -27,6 +27,12 @@ $(".time-block").each(function() {
     $(this).removeClass("past");
     $(this).addClass("future");
   }
+
+});
+
+$(".saveBtn").on("click", function() {
+  
+
 });
 
   // TODO: Add a listener for click events on the save button. This code should
