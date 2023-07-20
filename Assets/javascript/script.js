@@ -6,10 +6,10 @@ $(function () {
   let currentDay = dayjs();
   let currentHour = currentDay.hour();
 
-
+// display current date
   $("#currentDay").text(currentDay.format("MMMM D, YYYY"));
 
-
+// color coding for past present and future
   $(".time-block").each(function () {
 
     let hour = parseInt($(this).attr("id"));
@@ -29,6 +29,8 @@ $(function () {
 
   });
 
+
+// save button saves to local storage
   $(".saveBtn").on("click", function () {
     const time = $(this).parent().attr("id")
     const userInput = $(this).siblings(".description").val()
@@ -37,6 +39,7 @@ $(function () {
 
   });
 
+// get items from local storage and display on page even after refresh
   for (let i = 9; i < 18; i++) {
     $(`#${i}`).children(".description").val(localStorage.getItem(i))
   }
