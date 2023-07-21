@@ -4,7 +4,8 @@
 $(function () {
 
   let currentDay = dayjs();
-  let currentHour = currentDay.hour();
+  // let currentHour = currentDay.hour();
+  let currentHour = 12;
 
 // display current date
   $("#currentDay").text(currentDay.format("MMMM D, YYYY"));

@@ -16,6 +16,8 @@ Future times are represented with a green background, the present time is repres
 After typing in whatever you want, click the blue save button to the right of the textbox you wrote in to save the task to local storage allowing it to say even when the page is refreshed.
 To remove an item, click the save button with the text box empty.
 
+![Scheduler Visual](assets/images/work-day-scheduler.png)
+
 ## License
 
 Refer to LICENCE in repo.
